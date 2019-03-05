@@ -31,7 +31,7 @@ export class MensajeService {
         return await this.mensajeRepository.save(mensajeUpdate);
   }
 
-  async deleteMensaje(idMensaje: number): Promise<DeleteResult> {
+  async deleteMensaje(idMensaje: number): Promise<any> {
       return await this.mensajeRepository.delete(idMensaje);
   }
 }
